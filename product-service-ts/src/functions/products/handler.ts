@@ -10,7 +10,12 @@ const products: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async () => 
     statusCode: 200,
     body: {
       ...catsData
-    }
+    },
+    headers: {
+      "Access-Control-Allow-Headers": "Content-Type",
+      "Access-Control-Allow-Origin": "https://dy2u25c90hnvg.cloudfront.net",
+      "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+    },
   });
 };
 
