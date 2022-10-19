@@ -1,0 +1,1 @@
+export { catsData } from './catsData';
